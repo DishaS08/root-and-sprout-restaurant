@@ -1,143 +1,61 @@
 # 🌱 Root & Sprout Restaurant
 
-**Eat Real. Taste Comfort.**
+A full-stack restaurant app with online ordering, table reservations, and AI chatbot.
 
-Root & Sprout is a **full-stack restaurant web application** featuring online food ordering, table reservations, user authentication, and an AI-powered chatbot for customer assistance.
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=flat-square&logo=node.js)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
----
+## ✨ Features
 
-## 🚀 Tech Stack
+- 🍽️ **Online Ordering** - Browse menu, add to cart, apply coupons
+- 📅 **Reservations** - Book & manage table reservations
+- 🔐 **Auth** - Email/password + Google OAuth login
+- 🤖 **AI Chatbot** - Powered by Google Gemini
+- ⭐ **Reviews** - Customer ratings & reviews
 
-**Frontend**
-- React 19, Vite
-- Tailwind CSS
-- React Router DOM
-- Framer Motion
-- Axios, React Hot Toast
+## 🚀 Quick Start
 
-**Backend**
-- Node.js, Express.js
-- MongoDB, Mongoose
-- JWT Authentication
-- Google OAuth
-- Google Gemini AI (Chatbot)
-- Nodemailer
-
----
-
-## ✨ Key Features
-
-- 🍽️ **Online Ordering** – Cart, coupons, order tracking & history  
-- 📅 **Table Reservations** – Book, view, cancel reservations  
-- 👤 **Authentication** – Email/password + Google OAuth  
-- 💬 **AI Chatbot** – Menu help & restaurant queries (Gemini AI)  
-- ⭐ **Reviews & Ratings** – Customer feedback system  
-- 🎨 **Modern UI** – Responsive design, animations, notifications  
-
----
-
-## 📁 Project Structure
-
-root-and-sprout/
-├── src/        # Frontend (React)
-├── server/     # Backend (Node + Express)
-├── public/
-├── index.html
-├── package.json
-├── tailwind.config.js
-└── vite.config.js
-
-
-
-
----
-
-## 🛠️ Setup & Run
-
-### Prerequisites
-- Node.js (v18+)
-- MongoDB (local or Atlas)
-- npm or yarn
-
-### Installation
 ```bash
-git clone https://github.com/DishaS08/root-and-sprout-restaurant.git
+# Clone & install
+git clone https://github.com/DishaS08/root-and-sprout.git
 cd root-and-sprout
 npm install
 cd server && npm install && cd ..
-Environment Variables (.env file inside server/)
-bash
-Copy code
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/root-and-sprout
-JWT_SECRET=your-super-secret-jwt-key-here
-GOOGLE_CLIENT_ID=your-google-client-id
-GEMINI_API_KEY=your-gemini-api-key
-EMAIL_HOST=smtp.gmail.com
-EMAIL_PORT=587
-EMAIL_USER=your-email@gmail.com
-EMAIL_PASS=your-app-password
-Run Project
-bash
-Copy code
-# Backend (Terminal 1)
-cd server
-npm run dev
 
-# Frontend (Terminal 2)
-npm run dev
-Frontend: http://localhost:5173
+# Configure server/.env
+MONGODB_URI=your-mongodb-uri
+JWT_SECRET=your-secret
 
-Backend API: http://localhost:5000/api
+# Run
+cd server && npm run dev  # Backend → localhost:5000
+npm run dev               # Frontend → localhost:5173
+```
 
-📡 Core API Modules
-Authentication (register/login/Google OAuth)
+## 🛠️ Tech Stack
 
-Orders (create/get)
+**Frontend:** React, Vite, Tailwind CSS, Framer Motion  
+**Backend:** Node.js, Express, MongoDB, JWT  
+**AI:** Google Gemini
 
-Reservations (book/view/cancel)
+## 📁 Structure
 
-Coupons (validate)
+```
+├── src/           # React frontend
+│   ├── components/
+│   ├── pages/
+│   └── context/
+├── server/        # Express backend
+│   ├── models/
+│   ├── routes/
+│   └── controllers/
+```
 
-Reviews (submit/get)
+## 👩‍💻 Author
 
-AI Chat (send message)
+**Disha Suryawanshi** — [GitHub](https://github.com/DishaS08)
 
-📄 Available Scripts
-Frontend
+---
 
-bash
-Copy code
-npm run dev      # Start dev server
-npm run build    # Build for production
-npm run preview  # Preview production build
-npm run lint     # Run ESLint
-Backend
-
-bash
-Copy code
-cd server
-npm run dev      # Start with nodemon
-npm start        # Start production server
-👩‍💻 Author
-Disha Suryawanshi
-Computer Engineering Student | Full-Stack Developer
-GitHub: @DishaS08
-LinkedIn: Your LinkedIn
-
-⭐ Star this repository if you find it useful!
-
-pgsql
-Copy code
-
-✅ All code blocks now **start with ```bash** and properly **end with ```**.  
-
-This is fully copy-paste ready for your GitHub README.  
-
-If you want, I can also **add a small “Live Demo” and screenshot section** to make it look more professional on GitHub without making it too long. Do you want me to do that?
-
-
-
-
-
-
+⭐ Star this repo if you found it helpful!
