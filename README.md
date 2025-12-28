@@ -1,45 +1,77 @@
-# Root & Sprout – Restaurant Website 🌱🍽️
+🌱 Root & Sprout Restaurant
+<div align="center"> ![React](https://img.shields.io/badge/React-19.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-7.2.4-646CFF?style=for-the-badge&logo=vite&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-8.0-47A248?style=for-the-badge&logo=mongodb&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white) </div>
 
-**Eat Real. Taste Comfort.**
+A full-stack restaurant web app with online ordering, table reservations, and AI chatbot support.
+Live Demo
+ • Installation
+ • API
 
-Root & Sprout is a modern restaurant web application built using **React and Vite**, designed to showcase a variety of cuisines including Indian, Indo-Chinese, and Italian food. The project focuses on clean UI, fast performance, and a welcoming dining experience.
+📸 Screenshots
+<div align="center"> <img src="https://via.placeholder.com/800x400?text=Homepage+Screenshot" alt="Homepage" width="80%"/> </div>
+✨ Features
 
----
+Online Ordering: Browse menu, add to cart, track orders, apply coupons.
 
-## 🚀 Tech Stack
+Table Reservations: Book, manage, and cancel tables.
 
-- React
-- Vite
-- JavaScript (ES6+)
-- HTML5
-- CSS3
+Authentication: Email/password & Google OAuth with JWT.
 
----
+AI Chatbot: Google Gemini AI for menu & order assistance.
 
-## ✨ Features
+Reviews & Ratings: Star ratings and customer feedback.
 
-- Modern and responsive UI
-- Multi-cuisine restaurant concept
-- Clean homepage with brand tagline
-- Fast development & build using Vite
-- Scalable frontend structure
+Modern UI: Responsive, animated, interactive with Tailwind & Framer Motion.
 
----
+🛠️ Tech Stack
 
-## ⚙️ Development Setup
+Frontend: React, Vite, Tailwind CSS, Framer Motion, Axios
+Backend: Node.js, Express, MongoDB, Mongoose, JWT, Bcrypt.js
 
-This project uses **Vite** for fast builds and Hot Module Replacement (HMR).
+🚀 Installation
+git clone https://github.com/yourusername/root-and-sprout.git
+cd root-and-sprout
+npm install         # Frontend
+cd server
+npm install         # Backend
 
-### Available Plugins
-- `@vitejs/plugin-react` – uses Babel for Fast Refresh
-- `@vitejs/plugin-react-swc` – uses SWC for faster builds
 
-> Note: React Compiler is not enabled to avoid performance overhead during development.
+Configure .env in server/ (MongoDB URI, JWT secret, Google API keys, email).
 
----
+Run:
 
-## 🛠️ Getting Started
+# Backend
+cd server && npm run dev
+# Frontend
+npm run dev
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/DishaS08/root-and-sprout-restaurant.git
+📡 API Endpoints (Summary)
+
+Auth: /api/auth/register, /login, /google, /me
+
+Orders: /api/orders
+
+Reservations: /api/reservations
+
+Coupons: /api/coupons
+
+Reviews: /api/reviews
+
+Chat: /api/chat
+
+🍴 Menu Categories
+
+Indian, Chinese, Fast Food, Sweets, Soups, Sides, Beverages
+
+🤝 Contributing
+
+Fork → Feature Branch → Commit → Push → Pull Request
+
+👨‍💻 Author
+
+Disha Suryawanshi
+
+GitHub: @yourusername
+
+LinkedIn: Your LinkedIn
+
+Made with ❤️ for food lovers everywhere.
