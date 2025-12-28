@@ -1,0 +1,4 @@
+[2025-12-28T06:06:40.021Z] 📨 Attempting to send email to: dishafreelance01@gmail.com | Subject: New Login Alert - Root & Sprout
+[2025-12-28T06:07:01.957Z] 📨 Attempting to send email to: dishafreelance01@gmail.com | Subject: New Login Alert - Root & Sprout
+[2025-12-28T06:07:05.228Z] ✅ Email successfully sent! ID: <a92bc9f5-c16d-9052-ede9-dbca5749d473@gmail.com> Response: 250 2.0.0 OK  1766902025 d9443c01a7336-2a2f3d4d858sm244750845ad.57 - gsmtp
+[2025-12-28T06:07:06.183Z] ✅ Email successfully sent! ID: <0e5591e9-42e8-886c-2031-27d68864269c@gmail.com> Response: 250 2.0.0 OK  1766902026 d2e1a72fcca58-7ff7a93b441sm25625190b3a.9 - gsmtp
