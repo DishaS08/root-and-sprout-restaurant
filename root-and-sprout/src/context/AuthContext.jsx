@@ -115,8 +115,46 @@ export const AuthProvider = ({ children }) => {
         }
     };
 
+    // New function to handle Google credential (JWT) from GoogleLogin component
+    const loginWithGoogleCredential = async (credential) => {
+        try {
+            // Decode the JWT credential to get user info
+            const base64Url = credential.split('.')[1];
+            const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+            const jsonPayload = decodeURIComponent(atob(base64).split('').map(function (c) {
+                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+            }).join(''));
+
+            const { name, email, picture, sub: googleId } = JSON.parse(jsonPayload);
+
+            // Use Google picture if available, otherwise generate initials
+            const userAvatar = picture || `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=0D8ABC&color=fff`;
+
+            const response = await authService.googleLogin({
+                email,
+                name,
+                avatar: userAvatar,
+                googleId
+            });
+
+            // Backend returns { _id, name, email, phone, token, avatar }
+            const { token, ...userData } = response.data;
+
+            // Save token
+            localStorage.setItem('token', token);
+
+            // Set user
+            setUser(userData);
+            return userData;
+
+        } catch (error) {
+            console.error("Google auth failed", error);
+            throw error;
+        }
+    };
+
     return (
-        <AuthContext.Provider value={{ user, login, signup, logout, loginWithGoogle }}>
+        <AuthContext.Provider value={{ user, login, signup, logout, loginWithGoogle, loginWithGoogleCredential }}>
             {children}
         </AuthContext.Provider>
     );
