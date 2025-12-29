@@ -28,6 +28,7 @@ const SignupPage = () => {
 
     const GoogleLoginButton = () => {
         const googleLogin = useGoogleLogin({
+            flow: 'implicit',
             onSuccess: async (tokenResponse) => {
                 setIsLoading(true);
                 try {
