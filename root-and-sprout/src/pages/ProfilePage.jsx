@@ -122,14 +122,7 @@ const ProfilePage = () => {
                         )}
                     </div>
 
-                    {/* Saved Addresses */}
-                    <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all group cursor-pointer">
-                        <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <MapPin size={24} />
-                        </div>
-                        <h2 className="text-xl font-bold text-dark mb-2">Saved Addresses</h2>
-                        <p className="text-gray-500">Manage your delivery locations.</p>
-                    </div>
+
                 </div>
 
                 {/* Discount Coupons */}

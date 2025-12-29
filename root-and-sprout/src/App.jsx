@@ -15,7 +15,7 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import ProfilePage from './pages/ProfilePage';
 import ReviewsSection from './components/ReviewsSection';
-import ChatBot from './components/ChatBot';
+
 
 function App() {
   return (
@@ -42,7 +42,7 @@ function App() {
           <Route path="/profile" element={<ProfilePage />} />
         </Routes>
         <Footer />
-        <ChatBot />
+
       </div>
     </AuthProvider>
   );

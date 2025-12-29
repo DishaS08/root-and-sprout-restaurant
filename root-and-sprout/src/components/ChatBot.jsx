@@ -33,9 +33,12 @@ const ChatBot = () => {
             setMessages(prev => [...prev, { text: data.reply, sender: 'bot' }]);
         } catch (error) {
             console.error(error);
-            const errorMessage = error.response?.status === 503
-                ? "I'm offline right now (API Key missing). Please tell the admin!"
-                : "Oops! My brain froze. Try again? 🥶";
+            // Use the backend error message if available, otherwise generic
+            const errorMessage = error.response?.data?.message ||
+                (error.response?.status === 503
+                    ? "I'm offline right now (API Key missing). Please tell the admin!"
+                    : "Oops! My brain froze. Try again? 🥶");
+
             setMessages(prev => [...prev, { text: errorMessage, sender: 'bot' }]);
         } finally {
             setIsTyping(false);
