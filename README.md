@@ -52,7 +52,8 @@ npm run dev               # Frontend → localhost:5173
 │   └── controllers/
 ```
 
-🌐 Live Project
+## 🌐 Live Project
 Check out the live app: https://root-and-sprout-restaurant.vercel.app
+
 
 
