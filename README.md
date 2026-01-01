@@ -53,5 +53,6 @@ npm run dev               # Frontend → localhost:5173
 ```
 
 🌐 Live Project
-Check out the live app: https://root-and-sprout-restaurant.vercel.app/
+Check out the live app: https://root-and-sprout-restaurant.vercel.app
+
 
